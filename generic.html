@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nadif</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style>
+			.carousel-container {
+				width: 500px;
+				height: 300px;
+				position: relative;
+				overflow: hidden;
+				margin: 0 auto;
+				border-radius: 15px;
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+			}
+			.carousel-slide {
+				display: flex;
+				transition: transform 1s ease-in-out;
+			}
+			.carousel-slide img {
+				width: 500px;
+				height: 300px;
+				object-fit: cover;
+				border-radius: 15px;
+			}
+			.carousel-btn {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				background-color: rgba(0, 0, 0, 0.6);
+				color: white;
+				border: none;
+				padding: 12px;
+				cursor: pointer;
+				border-radius: 50%;
+				font-size: 18px;
+			}
+			.carousel-btn:hover {
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+			#prevBtn {
+				left: 15px;
+			}
+			#nextBtn {
+				right: 15px;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><img src="images/Logo-Nadif.png" alt="" /> </a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Generic</h1>
+									</header>
+									<!-- Carrousel d'images -->
+									<div class="carousel-container">
+										<div class="carousel-slide">
+											<img src="images/pic1.png" alt="Image 1">
+											<img src="images/pic2.png" alt="Image 2">
+											<img src="images/pic3.jpg" alt="Image 3">
+											<img src="images/pic4.png" alt="Image 4">
+											<img src="images/pic5.png" alt="Image 5">
+										</div>
+										<button class="carousel-btn" id="prevBtn">&#10094;</button>
+										<button class="carousel-btn" id="nextBtn">&#10095;</button>
+									</div>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Scripts -->
+					<script src="assets/js/jquery.min.js"></script>
+					<script>
+						const slide = document.querySelector('.carousel-slide');
+						const images = document.querySelectorAll('.carousel-slide img');
+						const prevBtn = document.getElementById('prevBtn');
+						const nextBtn = document.getElementById('nextBtn');
+
+						let counter = 0;
+						const size = 500;
+
+						nextBtn.addEventListener('click', () => {
+							counter = (counter + 1) % images.length;
+							slide.style.transform = `translateX(${-size * counter}px)`;
+						});
+
+						prevBtn.addEventListener('click', () => {
+							counter = (counter - 1 + images.length) % images.length;
+							slide.style.transform = `translateX(${-size * counter}px)`;
+						});
+
+						setInterval(() => {
+							nextBtn.click();
+						}, 4000);
+					</script>
+
+			</div>
+
+	</body>
+</html>
