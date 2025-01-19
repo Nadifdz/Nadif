@@ -151,100 +151,100 @@ Nos équipes spécialisées s'assurent que chaque espace soit impeccable, en ré
 					</div>
 
 				<!-- Contact -->
-			   <section id="contact">
-				<div class="inner">
-					<section>
-						<form id="contact-form">
-							<div class="fields">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" required />
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" required />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="6" required></textarea>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="primary" /></li>
-								<li><input type="reset" value="Clear" /></li>
-							</ul>
-						</form>
-					</section>
-					<section class="split">
+				<section id="contact">
+					<div class="inner">
 						<section>
-							<div class="contact-method">
-								<span class="icon solid alt fa-envelope"></span>
-								<h3>Email</h3>
-								<a href="mailto:nadif.services@gmail.com">nadif.services@gmail.com</a>
-							</div>
+							<form id="contact-form">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" required />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" required />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6" required></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Clear" /></li>
+								</ul>
+							</form>
 						</section>
-						<section>
-							<div class="contact-method">
-								<span class="icon solid alt fa-phone"></span>
-								<h3>Téléphone</h3>
-								<span>+(213) 6-6165-7516</span>
-							</div>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="mailto:nadif.services@gmail.com">nadif.services@gmail.com</a>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Téléphone</h3>
+									<span>+(213) 6-6165-7516</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Adresse</h3>
+									<span>183 Cité Communale S/1 El Alia<br />
+									Biskra, 07000<br />
+									Algérie</span>
+								</div>
+							</section>
 						</section>
-						<section>
-							<div class="contact-method">
-								<span class="icon solid alt fa-home"></span>
-								<h3>Adresse</h3>
-								<span>183 Cité Communale S/1 El Alia<br />
-								Biskra, 07000<br />
-								Algérie</span>
-							</div>
-						</section>
-					</section>
-				</div>
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					</ul>
-					<ul class="copyright">
-						
-					</ul>
-				</div>
-			</footer>
-
-	</div>
-
-<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-<!-- EmailJS Script -->
-	<script type="text/javascript">
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			event.preventDefault(); // Empêche le rechargement de la page
-
-			// Envoyer le formulaire via EmailJS
-			emailjs.sendForm('service_b325gvb', 'template_ua8i4xq', this)
-				.then(function() {
-					alert('Email envoyé avec succès !');
-					document.getElementById('contact-form').reset(); // Réinitialise le formulaire
-				}, function(error) {
-					alert('Erreur lors de l\'envoi de l\'email : ' + error.text);
-				});
-		});
-	</script>
-
+					</div>
+				</section>
+	
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						<ul class="copyright">
+							
+						</ul>
+					</div>
+				</footer>
+	
+		</div>
+	
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	
+	<!-- EmailJS Script -->
+		<script type="text/javascript">
+			document.getElementById('contact-form').addEventListener('submit', function(event) {
+				event.preventDefault(); // Empêche le rechargement de la page
+	
+				// Envoyer le formulaire via EmailJS
+				emailjs.sendForm('service_b325gvb', 'template_ua8i4xq', this)
+					.then(function() {
+						alert('Email envoyé avec succès !');
+						document.getElementById('contact-form').reset(); // Réinitialise le formulaire
+					}, function(error) {
+						alert('Erreur lors de l\'envoi de l\'email : ' + error.text);
+					});
+			});
+		</script>
+	
 	</body>
 </html>
